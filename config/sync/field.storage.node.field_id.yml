@@ -1,0 +1,26 @@
+uuid: 93d45dac-2f14-4638-94b4-958569acf080
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - norris_import
+_core:
+  default_config_hash: 7kqzFe2pDqEn6NYC8HjQTspQ65YyffhZUPZlqYnm-EM
+id: node.field_id
+field_name: field_id
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

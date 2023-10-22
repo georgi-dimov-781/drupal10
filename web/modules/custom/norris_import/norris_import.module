@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * @file
+ * Module file for Chuck Norris module.
+ */
+
+use Drupal\Component\Utility\Html;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+use Drupal\norris_import\Service\JokesApiService;
+
+/**
+ * @defgroup norris_import
+ * @ingroup examples
+ * @{
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * This function is called when the module is installed. It initializes and configures
+ * the Jokes API service and logs that the module has been installed.
+ */
+function norris_import_install() {
+  JokesApiService::getInstance()->install(); // Initialize and configure the service.
+  JokesApiService::getInstance()->logInfo('Module is installed'); // Log the installation.
+}
+
+/**
+ * Implements hook_uninstall().
+ *
+ * This function is called when the module is uninstalled. It cleans up and
+ * deactivates the Jokes API service and logs that the module has been uninstalled.
+ */
+function norris_import_uninstall() {
+  JokesApiService::getInstance()->uninstall(); // Deactivate and clean up the service.
+  JokesApiService::getInstance()->logInfo('Module is uninstalled'); // Log the uninstallation.
+}
+
+/**
+ * Implements hook_help().
+ */
+function norris_import_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the norris_import module.
+    case 'help.page.norris_import':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module provides a custom module for fetching data from API to Drupal.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,21 @@
+uuid: c25f793a-519c-43d7-aa59-ac3666d7feff
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_icon_url
+    - node.type.jokes
+_core:
+  default_config_hash: rmznhNUqV6apVTKZJtyap4Adx7ByqA7Dn1u7C1PC7aU
+id: node.jokes.field_icon_url
+field_name: field_icon_url
+entity_type: node
+bundle: jokes
+label: 'icon url'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

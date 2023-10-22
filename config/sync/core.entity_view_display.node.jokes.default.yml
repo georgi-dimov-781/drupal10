@@ -1,0 +1,65 @@
+uuid: 3cc8d558-4aa4-43ee-bd83-659b75508fc9
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.field.node.jokes.field_categories
+    - field.field.node.jokes.field_content
+    - field.field.node.jokes.field_created
+    - field.field.node.jokes.field_icon_url
+    - field.field.node.jokes.field_id
+    - field.field.node.jokes.field_url
+    - node.type.jokes
+  module:
+    - user
+_core:
+  default_config_hash: Zsdt0fCQ03CouIdqrFPYBF0IYhHl9orNHgd_H1CMKs0
+id: node.jokes.default
+targetEntityType: node
+bundle: jokes
+mode: default
+content:
+  field_content:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_created:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_icon_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_id:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_url:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_categories: true
+  langcode: true
+  links: true

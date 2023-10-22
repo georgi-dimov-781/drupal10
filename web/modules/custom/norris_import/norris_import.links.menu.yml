@@ -1,0 +1,30 @@
+norris_import.settings:
+  title: 'Jokes Menu Lvl 1'
+  description: 'Main Menu for the Jokes.'
+  route_name:  norris_import.settings
+  parent: system.admin_structure
+norris_import.configure:
+  title: 'Configure API connection and CT'
+  description: 'Test'
+  route_name: norris_import.settings
+  parent: norris_import.settings
+norris_import.migrate:
+  title: 'Import Jokes Menu'
+  description: 'Configure a Jokes entity type2.'
+  route_name: norris_import.migrate
+  parent: norris_import.settings
+norris_import.jokes.list:
+  title: 'View jokes list'
+  description: 'List of all imported jokes'
+  route_name: norris_import.jokes.list
+  parent: norris_import.settings
+norris_import.manage.data:
+  title: 'View importet jokes'
+  description: 'Test'
+  route_name: norris_import.manage.data
+  parent: norris_import.settings
+norris_import.db.logs:
+  title: 'View logs and check the module'
+  description: 'test'
+  route_name: norris_import.db.logs
+  parent: norris_import.settings

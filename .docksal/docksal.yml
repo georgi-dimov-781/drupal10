@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  web:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: nginx
+    labels:
+      - io.docksal.virtual-host=dr10.docksal

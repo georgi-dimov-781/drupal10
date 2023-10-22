@@ -1,0 +1,7 @@
+name: Chuck Norris module
+type: module
+description: Integrates Chuck Norris API into Drupal.
+core_version_requirement: ^9 || ^10
+package: Custom
+dependencies:
+  - drupal:views

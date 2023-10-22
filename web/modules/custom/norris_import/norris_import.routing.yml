@@ -1,0 +1,34 @@
+norris_import.settings:
+  path: '/norris_import/settings'
+  defaults:
+    _form: '\Drupal\norris_import\Form\AdminSettingsForm'
+    _title: 'Jokes Settings'
+  requirements:
+    _permission: 'access content'
+
+norris_import.migrate:
+  path: '/norris_import/migrate'
+  defaults:
+    _form: '\Drupal\norris_import\Form\ImportForm'
+    _title: 'Migrate'
+  requirements:
+    _permission: 'access content'
+
+norris_import.jokes.list:
+  path: 'jokes-list'
+  requirements:
+    _permission: 'access content'
+
+norris_import.manage.data:
+  path: '/admin/content/jokes'
+  defaults:
+    _controller: '\Drupal\norris_import\Controller\JokesContentController::content'
+  requirements:
+    _permission: 'administer site configuration'
+
+norris_import.db.logs:
+  path: 'admin/reports/dblog/module-logs'
+  defaults:
+    _controller: '\Drupal\norris_import\Controller\JokesContentController::logs'
+  requirements:
+    _permission: 'administer site configuration'

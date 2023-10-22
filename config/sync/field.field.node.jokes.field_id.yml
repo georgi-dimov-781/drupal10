@@ -1,0 +1,24 @@
+uuid: 7a554232-31ad-4875-8589-be0aa6088639
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_id
+    - node.type.jokes
+  enforced:
+    module:
+      - norris_import
+_core:
+  default_config_hash: mVgCrF-B4nHnBDAGKsTeUzIO24uiSpHwwi-Oqpj3aiY
+id: node.jokes.field_id
+field_name: field_id
+entity_type: node
+bundle: jokes
+label: ID
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

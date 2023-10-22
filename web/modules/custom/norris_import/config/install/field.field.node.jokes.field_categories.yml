@@ -1,0 +1,19 @@
+uuid: 459000b8-704d-47fd-8742-dfffdad31319
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categories
+    - node.type.jokes
+id: node.jokes.field_categories
+field_name: field_categories
+entity_type: node
+bundle: jokes
+label: category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

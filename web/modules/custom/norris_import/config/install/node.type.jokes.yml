@@ -1,0 +1,16 @@
+uuid: a5724fa3-e881-4dc2-82c8-016b9be66935
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - norris_import
+_core:
+  default_config_hash: QrD9hkIgzKlhCr5DCziKK0BLCyRkU96LQ87LbIGZu8o
+name: Jokes
+type: jokes
+description: 'Custom Content Type for Jokes in chucknorris'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true
